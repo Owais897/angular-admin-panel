@@ -1,4 +1,4 @@
-<mat-toolbar class="position-absolute" color="primary">
+<mat-toolbar class="position-absolute">
   <mat-toolbar-row class="justify-content-between">
     <button [routerLink]="['/home']" mat-button>Home</button>
     <button [routerLink]="['/login']" mat-button>Logout</button>
@@ -13,7 +13,7 @@
 
 <div class="mt-4">
   <form *ngIf="userForm">
-    <h2>Add New User</h2>
+    <h2>Add User</h2>
     <p>
       First Name:
       <input type="text" name="firstName" [(ngModel)]="newUser.firstName" />
@@ -37,7 +37,7 @@
   </form>
 
   <form *ngIf="editUserForm">
-    <h2>Edit User Details</h2>
+    <h2>Edit User Name</h2>
     <p>
       First Name:
       <input type="text" name="firstName" [(ngModel)]="editedUser.firstName" />
